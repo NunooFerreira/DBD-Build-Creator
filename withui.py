@@ -6,6 +6,20 @@ from tkinter import ttk, filedialog, messagebox
 from ttkthemes import ThemedTk  # For modern themes
 import difflib  # For finding closest matches
 
+
+def get_assets_path():
+    """Get the path to the assets folder, whether running as a script or as a bundled exe."""
+    if hasattr(sys, '_MEIPASS'):
+        # Running as a bundled exe
+        return os.path.join(sys._MEIPASS, "perks")
+    else:
+        # Running as a script
+        return "perks"
+
+# Use this function to get the path to the perks folder
+assets_path = get_assets_path()
+
+
 def load_image(path, size=None):
     """Load an image and resize if size is provided."""
     img = Image.open(path).convert("RGBA")
@@ -177,7 +191,7 @@ class BuildCreatorApp:
         # Configure styles for a modern look
         self.style.configure("Accent.TButton", font=("Helvetica", 12), padding=10)
 
-    def get_valid_perks(self, assets_path):
+    def get_valid_perks(self):
         """Get a list of valid perk names from the assets directory."""
         valid_perks = []
         for filename in os.listdir(assets_path):
@@ -203,11 +217,8 @@ class BuildCreatorApp:
             messagebox.showerror("Error", "All fields are required!")
             return
 
-        # Paths
-        assets_path = "perks"
-
         # Get valid perk names
-        valid_perks = self.get_valid_perks(assets_path)
+        valid_perks = self.get_valid_perks()
 
         # Correct typos in perks
         corrected_perks = [self.correct_typo(perk, valid_perks) for perk in perks]
