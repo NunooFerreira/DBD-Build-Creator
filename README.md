@@ -92,29 +92,5 @@ The GUI will auto-correct minor typos and display success/error messages.
 
 ---
 
-## Known Issues
-- **Web Scraping:** The scraper relies on page structure and may break if the source website changes.
-- **Image Matching:** Typos might not always be corrected accurately.
-- **Fonts:** The program uses `arialbd.ttf` from Windows fonts. On other OS, you may need to adjust the font path.
 
----
-
-## Future Improvements
-- Add support for scraping killer perks and images.
-- Implement drag-and-drop functionality in the GUI.
-- Enhance typo correction using advanced algorithms.
-- Cross-platform font support.
-
----
-
-## License
-This program is open-source and available under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-- Inspired by **Dead by Daylight** community.
-- Images sourced from [gigglingcorpse.com](https://gigglingcorpse.com/).
-
-Happy build crafting!
 
