@@ -33,16 +33,6 @@ build-creator/
 └── README.md            # Program documentation
 ```
 
-## Setup
-
-### Prerequisites (For Python Script)
-Ensure you have the following Python packages installed:
-
-```bash
-pip install pillow selenium beautifulsoup4 requests ttkthemes
-```
-
-You also need a **Chrome WebDriver** for Selenium if you plan to use the scraper. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your system's PATH.
 
 ## Usage
 
@@ -54,10 +44,22 @@ Simply download and run the pre-built `.exe` file:
 - Click **Create Build** to generate and save the image.
 
 
-
 *Note: The executable includes typo correction for all inputs.*
 
 ### 2. Running the Python Script
+
+## Setup
+
+### Prerequisites (For Python Script)
+Ensure you have the following Python packages installed:
+
+```bash
+pip install pillow selenium beautifulsoup4 requests ttkthemes
+```
+
+You also need a **Chrome WebDriver** for Selenium if you plan to use the scraper. Download it from [here](https://sites.google.com/a/chromium.org/chromedriver/downloads) and add it to your system's PATH.
+
+
 
 #### Console-Based Build Creation
 Use `createbuild.py` to create a build via command-line:
