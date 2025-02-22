@@ -72,6 +72,9 @@ python createbuild.py "SprintBurst" "IronWill" "DeadHard" "BorrowedTime" "MedKit
 
 The resulting build image will be saved as `SurvivorBuild1.png`.
 
+![SurvivorBuild1](https://github.com/user-attachments/assets/ca59d7be-b4fc-4216-8cae-c49e6d2b9102)
+
+
 *Note: You can mistype perks, add-ons, items, or offerings, and the program will automatically adjust them to the closest matching names.*
 
 ### 3. GUI-Based Build Creation
@@ -90,29 +93,10 @@ The GUI will auto-correct minor typos and display success/error messages.
 
 ---
 
-## Known Issues
-- **Web Scraping:** The scraper relies on page structure and may break if the source website changes.
-- **Image Matching:** Typos might not always be corrected accurately in the GUI.
 - **Fonts:** The program uses `arialbd.ttf` from Windows fonts. On other OS, you may need to adjust the font path.
 
 ---
 
-## Future Improvements
-- Add support for scraping killer perks and images.
-- Implement drag-and-drop functionality in the GUI.
-- Enhance typo correction using advanced algorithms.
-- Cross-platform font support.
 
----
 
-## License
-This program is open-source and available under the [MIT License](LICENSE).
-
----
-
-## Acknowledgments
-- Inspired by **Dead by Daylight** community.
-- Images sourced from [gigglingcorpse.com](https://gigglingcorpse.com/).
-
-Happy build crafting!
 
