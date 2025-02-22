@@ -1,10 +1,10 @@
 # Dead by Daylight Build Creator Program
 
 ## Overview
-This program allows users to create custom build images for **Dead by Daylight** using pre-scraped images of perks, add-ons, items, and offerings. It includes two ways to generate builds:
+This program allows users to create custom build images for **Dead by Daylight** using pre-scraped images of perks, add-ons, items, and offerings. It can be run in two ways:
 
-1. **Console-based script** (`createbuild.py`) for generating builds via command-line.
-2. **GUI-based script** (`withui.py`) using a user-friendly interface.
+1. **Downloadable Executable:** Run the pre-built `.exe` file for a seamless experience.
+2. **Python Script:** Run the program directly using Python commands.
 
 The images used by this program were obtained by running a separate scraping process (`scrape.py`) to collect the necessary assets.
 
@@ -14,14 +14,14 @@ The images used by this program were obtained by running a separate scraping pro
 - **Image Generation:** Combine selected perks, items, add-ons, and offerings into a cohesive build image.
 - **Command-line Tool:** Create builds directly from the terminal.
 - **Graphical Interface:** Use an intuitive GUI for easier build creation.
-- **Typo Correction:** The GUI auto-corrects minor typos in input names.
-- **Flexible Input:** Both the console and GUI versions can handle minor misspellings of perks, add-ons, items, and offerings, automatically adjusting them to the closest matching names.
+- **Typo Correction:** The program auto-corrects minor typos in input names.
+- **Flexible Input:** Handles minor misspellings of perks, add-ons, items, and offerings, automatically adjusting them to the closest matching names.
 
 ---
 
 ## Setup
 
-### Prerequisites
+### Prerequisites (For Python Script)
 Ensure you have the following Python packages installed:
 
 ```bash
@@ -47,18 +47,18 @@ build-creator/
 
 ## Usage
 
-### 1. Scrape Images (Optional)
-If you need to download images of perks, items, add-ons, and offerings, run the scraper:
+### 1. Running the Executable
+Simply download and run the pre-built `.exe` file:
 
-```bash
-python scrape.py
-```
+- Double-click the `.exe` file to launch the program.
+- Use the graphical interface to input perks, add-ons, items, offerings, and build name.
+- Click **Create Build** to generate and save the image.
 
-Images will be saved in the `perks/` folder.
+*Note: The executable includes typo correction for all inputs.*
 
-*Note: The scraper only downloads images and does not interact with the build creation process.*
+### 2. Running the Python Script
 
-### 2. Console-Based Build Creation
+#### Console-Based Build Creation
 Use `createbuild.py` to create a build via command-line:
 
 ```bash
@@ -74,11 +74,10 @@ The resulting build image will be saved as `SurvivorBuild1.png`.
 
 ![SurvivorBuild1](https://github.com/user-attachments/assets/ca59d7be-b4fc-4216-8cae-c49e6d2b9102)
 
-
 *Note: You can mistype perks, add-ons, items, or offerings, and the program will automatically adjust them to the closest matching names.*
 
-### 3. GUI-Based Build Creation
-Launch the graphical interface:
+#### GUI-Based Build Creation
+Launch the graphical interface with Python:
 
 ```bash
 python withui.py
@@ -93,10 +92,29 @@ The GUI will auto-correct minor typos and display success/error messages.
 
 ---
 
+## Known Issues
+- **Web Scraping:** The scraper relies on page structure and may break if the source website changes.
+- **Image Matching:** Typos might not always be corrected accurately.
 - **Fonts:** The program uses `arialbd.ttf` from Windows fonts. On other OS, you may need to adjust the font path.
 
 ---
 
+## Future Improvements
+- Add support for scraping killer perks and images.
+- Implement drag-and-drop functionality in the GUI.
+- Enhance typo correction using advanced algorithms.
+- Cross-platform font support.
 
+---
 
+## License
+This program is open-source and available under the [MIT License](LICENSE).
+
+---
+
+## Acknowledgments
+- Inspired by **Dead by Daylight** community.
+- Images sourced from [gigglingcorpse.com](https://gigglingcorpse.com/).
+
+Happy build crafting!
 
