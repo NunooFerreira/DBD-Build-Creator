@@ -3,10 +3,8 @@
 ## Overview
 This program allows users to create custom build images for **Dead by Daylight** using pre-scraped images of perks, add-ons, items, and offerings. It can be run in two ways:
 
-1. **Downloadable Executable:** Run the pre-built `.exe` file for a seamless experience.
+1. **Downloadable Executable:** Run the pre-built `.exe` file for a quick use.
 2. **Python Script:** Run the program directly using Python commands.
-
-The images used by this program were obtained by running a separate scraping process (`scrape.py`) to collect the necessary assets.
 
 ---
 
